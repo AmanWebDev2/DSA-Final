@@ -1,6 +1,6 @@
 def brute(board:list[list[int]]):
     # row validation
-    n = len(board)
+    n = len(board[0])
     for row in range(n):
         st = set()
         for col in range(n):
@@ -23,5 +23,8 @@ def brute(board:list[list[int]]):
                 return False
             
             st.add(board[row][col])
+    
+    # validate 3 x 3 sub-boxes
+    for row
 
     return True
